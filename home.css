@@ -1,0 +1,82 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif; box-sizing: border-box ;
+}
+body{
+    height: 100vh;
+    background:url(lunox\ pic.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+header{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    background-color: #000;
+    background-attachment: fixed;
+}
+header ul{
+    list-style: none;
+    display: flex;
+}
+header ul li{
+    width: 150px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+header ul li:hover{
+    background: linear-gradient(yellow, rgb(0, 140, 255));
+    color: #000;
+}
+header ul li:nth-child(1){
+    border-top: 4px solid yellow;
+}
+main{height: calc(100vh - 60px);
+     display:flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+}
+main p{
+    width: 800px;
+    height: 80px;
+    font-size: 80px;
+    display: block;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+    animation: rotateText 2s infinite linear;
+    text-shadow: 5px -4px aqua;
+}
+@keyframes rotateText {
+    
+    0%{
+        text-shadow: 5px -4px aqua;
+    }
+    50%{
+        text-shadow: 5px -4px red
+    }
+    100%{
+        transform: rotateY(0deg'angle');
+        text-shadow: 5px -4px yellow;
+    }
+}
+.div1{
+    color: yellow;
+    text-align: center;
+}
+#p1{
+    font-weight: bold; background-color: aquamarine;border: 5px solid blue;
+}
+#p2{
+    font-weight: bold; background-color: pink; border: 5px solid red;
+}
+

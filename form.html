@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <script>
+      function validateForm() {
+          const name = document.getElementById('name').value;
+          const birthDate = document.getElementById('birthd').value;
+          const age = document.getElementById('age').value;
+          const email = document.getElementById('email').value;
+          const contactNo = document.getElementById('contactNo').value;
+          const feedback = document.getElementById('feedback').value;
+          if (!name || !birthDate || !age || !email || !contactNo || !feedback) {
+              alert('Please fill out all required fields.');
+              return false;
+          }
+          return true;
+      }
+  </script>
+</head>
+<body>
+   
+    
+    <form id="myForm" action="submissionform.html" method="get" onsubmit="return validateForm()">
+      <fieldset>
+        <legend>Personal Particular</legend>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text"><br>
+        <label for="birthd">Birth Date</label>
+        <input type="text" id="birthd" name="birthd" size="15" placeholder="dd/mm/yyyy"><br>
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" size="30" ><br>
+        <label for="email">Email Address</label>
+        <input type="text" id="email" name="email" size="30">
+        <label for="contactNo">Contact Number</label>
+        <input type="text" id="contactNo" name="contactNo" size="30"><br>
+        <label for="game"><span>Have you played the Game?</span></label>
+        <select name="wouldyouplay" id="game" required>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br>
+        <div>
+            <label for="gender" style="color: aqua;">Gender:</label><br>
+            <input type="radio" name="gender" value="male" required>Male<br>
+            <input type="radio" name="gender" value="female" required>Female<br>
+            <label for="role" style="color: aqua;">Which role do you prefer to play as?</label><br>
+            <input type="radio" name="role" value="assassin" required>Assassin<br>
+            <input type="radio" name="role" value="marksman" required>Marksman<br>
+            <input type="radio" name="role" value="fighter" required>Fighter<br>
+            <input type="radio" name="role" value="mage" required>Mage<br>
+            <input type="radio" name="role" value="tank" required>Tank<br>
+            <input type="radio" name="role" value="support" required>Support<br>
+            <label for="feedback" style="color: aqua;">What do you find interesting about the game?</label>
+            <textarea name="feedback" id="feedback" cols="50" rows="12"></textarea><br>
+            <input type="submit" value="Submit">
+        </div>
+    </fieldset>
+          </form>
+</body>
+</html>

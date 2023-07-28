@@ -1,0 +1,37 @@
+
+body, h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(0, 247, 255);;
+    color: grey;
+    border:rgb(189, 36, 189);
+    text-align: center;  
+    height: 100vh;
+    background:url(gaming.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 40px;
+    margin-top: 20px;
+    color: rgb(189, 36, 189);
+}
+
+h2 {
+    font-size: 30px;
+    margin-top: 10px;
+    color: rgb(0, 247, 255);
+}
+.form-data {
+    font-size: 18px;
+    color: #01161b;
+    margin-bottom: 10px;
+    text-align: left;
+}
